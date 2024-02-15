@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>Hello World From Docker Container</main>;
+  return <div>Main page of my application</div>;
 }
