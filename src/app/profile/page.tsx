@@ -16,9 +16,16 @@ export default function Profile() {
         <Link className="cursor-pointer" href="/profile/2">
           Profile 2
         </Link>
-        <Link className="cursor-pointer" href="/profile/3">
-          Profile 3
+        <Link
+          prefetch={true}
+          className="cursor-pointer"
+          href={{ pathname: "/profile/3", query: { userName: "koraka" } }}
+        >
+          <div>A big square where I got some text</div>
         </Link>
+        <a href="https://google.com" target="_blank">
+          Google
+        </a>
       </div>
     </div>
   );
